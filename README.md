@@ -1,0 +1,1 @@
+esphome_scd41
