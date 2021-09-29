@@ -1,8 +1,8 @@
 #pragma once
 
-#include "core/component.h"
-#include "components/sensor/sensor.h"
-#include "components/i2c/i2c.h"
+#include "/src/esphome/core/component.h"
+#include "/src/esphome/components/sensor/sensor.h"
+#include "/src/esphome/components/i2c/i2c.h"
 
 namespace esphome {
 namespace scd41 {

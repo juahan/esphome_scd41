@@ -1,6 +1,6 @@
 #include "scd41.h"
-#include "core/log.h"
-#include "core/hal.h"
+#include "/src/esphome/core/log.h"
+#include "/src/esphome/core/hal.h"
 
 #ifdef USE_ESP8266
 #include <Wire.h>
