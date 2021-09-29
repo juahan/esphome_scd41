@@ -17,8 +17,8 @@ from esphome.const import (
 
 DEPENDENCIES = ["i2c"]
 
-scd30_ns = cg.esphome_ns.namespace("scd30")
-SCD30Component = scd30_ns.class_("SCD30Component", cg.PollingComponent, i2c.I2CDevice)
+scd41_ns = cg.esphome_ns.namespace("scd41")
+SCD41Component = scd41_ns.class_("SCD41Component", cg.PollingComponent, i2c.I2CDevice)
 
 CONF_AUTOMATIC_SELF_CALIBRATION = "automatic_self_calibration"
 CONF_ALTITUDE_COMPENSATION = "altitude_compensation"
@@ -29,7 +29,7 @@ CONF_TEMPERATURE_OFFSET = "temperature_offset"
 CONFIG_SCHEMA = (
     cv.Schema(
         {
-            cv.GenerateID(): cv.declare_id(SCD30Component),
+            cv.GenerateID(): cv.declare_id(SCD41Component),
             cv.Optional(CONF_CO2): sensor.sensor_schema(
                 unit_of_measurement=UNIT_PARTS_PER_MILLION,
                 icon=ICON_MOLECULE_CO2,
